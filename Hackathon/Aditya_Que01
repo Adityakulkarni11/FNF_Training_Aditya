@@ -1,0 +1,75 @@
+
+namespace Hackathon
+{
+    internal class Aditya_Que01
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the String: ");
+            string str= Console.ReadLine(); 
+            CountWordFrequencyDesc(str);    
+        }
+
+        private static void CountWordFrequencyDesc(string? str)
+        {
+            List<string> words = new List<string>();
+            string Word="";
+            foreach(char ch in str)
+            {
+                if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+                {
+                    Word += char.ToLower(ch);
+                }
+                else if (Word.Length > 0)
+                {
+                    words.Add(Word);
+                    Word = "";
+                }
+            }
+            if (Word.Length > 0)
+            {
+                words.Add(Word);
+            }
+            Dictionary<string,int> dict = new Dictionary<string,int>();
+            foreach (string word in words)
+            {
+                if (dict.ContainsKey(word))
+                {
+                    dict[word]++;
+                }
+                else
+                {
+                    dict[word] = 1;    
+                }
+            }
+            //foreach (var item in dict)
+            //{
+            //    Console.WriteLine($"{item.Value} {item.Key}");
+            //}
+            List<KeyValuePair<string, int>> list = new List<KeyValuePair<string, int>>();
+            foreach (var val in dict)
+            {
+                list.Add(val);
+            }
+            list.Sort((pair1, pair2) =>
+            {
+                if (pair1.Value != pair2.Value)
+                {
+                    return pair2.Value.CompareTo(pair1.Value);
+                }
+                else
+                {
+                    return pair2.Key.CompareTo(pair1.Key);
+                }
+            });
+            //var sorted = dict.OrderByDescending(x => x.Value).OrderByDescending(x => x.Key);
+
+            foreach (var item in list)
+            {
+                Console.WriteLine($"{item.Value} {item.Key}");
+            }
+
+            //Console.WriteLine(list);
+        }
+    }
+}
