@@ -28,7 +28,7 @@ namespace Assignments
                 return;
             }
             Console.WriteLine($"The number {number} is not a prime number");
-            
         }
     }
 }
+
