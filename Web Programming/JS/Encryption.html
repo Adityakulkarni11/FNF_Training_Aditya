@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character-Based Encryption</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, button { padding: 10px; margin: 10px 0; }
+    #output { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Encryption Application</h2>
+  
+  <input type="text" id="userInput" placeholder="Enter a word" />
+  <button onclick="encryptWord()">Encrypt</button>
+  <div id="output"></div>
+
+  <script>
+    const encrypterSentence = "the quick brown fox jumps over the lazy dog";
+    const encrypterWords = encrypterSentence.split(" ");
+
+    function encryptWord() {
+      const input = document.getElementById("userInput").value.trim().toLowerCase();
+      //console.log(input);
+      const outputDiv = document.getElementById("output");
+
+      if (!input) {
+        outputDiv.textContent = "Please enter a word.";
+        return;
+      }
+
+      let encrypted = [];
+
+      for (let i = 0; i < input.length; i++) {
+        const char = input[i];
+        let found = false;
+        //console.log(char);
+        for (let w = 0; w < encrypterWords.length; w++) {
+          const word = encrypterWords[w];
+          const charIndexInWord = word.indexOf(char);
+          //console.log(word);
+          //console.log(charIndexInWord);
+          if (charIndexInWord !== -1) {
+            encrypted.push(`${w}${charIndexInWord}`);
+            found = true;
+            break;
+          }
+        }
+
+        if (!found) {
+          encrypted.push(`-`); // character not found
+        }
+      }
+
+      outputDiv.textContent = `Encrypted Output: ${encrypted.join(",")}`;
+    }
+  </script>
+</body>
+</html>
