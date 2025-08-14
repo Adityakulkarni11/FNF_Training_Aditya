@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="form-title">Sign In</h2>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button id="submit-button">Sign In</button>
+    <div class="toggle-text" id="toggle-text">
+      Don't have an account? <span id="toggle-link">Sign Up</span>
+    </div>
+    <div class="message" id="message"></div>
+    <div class="error" id="error"></div>
+    <div class="active-users">
+      <strong>Active Users:</strong>
+      <ul id="user-list"></ul>
+      <button id="signout-all">Sign Out All</button>
+    </div>
+  </div>
+  <script>
+    window.formTitle = document.getElementById('form-title');
+    window.submitButton = document.getElementById('submit-button');
+    window.toggleText = document.getElementById('toggle-text');
+    window.toggleLink = document.getElementById('toggle-link');
+    window.message = document.getElementById('message');
+    window.error = document.getElementById('error');
+    window.emailInput = document.getElementById('email');
+    window.passwordInput = document.getElementById('password');
+    window.userList = document.getElementById('user-list');
+    window.signOutAllBtn = document.getElementById('signout-all');
+  </script>
+
+  <script src="./login.js"></script>
+</body>
+</html>

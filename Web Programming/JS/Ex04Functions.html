@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3 Ways to create functions in js
+
+        //named functions:
+        function helloworld(){
+            console.log("Hello World in console");
+        }
+
+        //print the message x no of times
+        function FuncWithArgs(count,stringData){
+            for(i=0;i<count;i++){
+                console.log(stringData);
+            }
+        }
+
+        helloworld();
+        FuncWithArgs(10,"Hello");
+
+        //Functions can be represenetd as varaibles and called. They are also called as anonymous methods, functions with no name but refered by the varaible to which it is assigned to....
+        const addFunc=function(v1,v2){
+            return v1+v2;
+        }
+        console.log("The added value is "+addFunc(2,3));
+
+        //////Lambda Functions or Arrow Functions
+        const multFunc=(v1,v2)=>v1*v2;
+        const square=(v1)=>multFunc(v1,v1);
+        console.log("The square of 12 is "+square(12));
+    </script>
+</body>
+</html>

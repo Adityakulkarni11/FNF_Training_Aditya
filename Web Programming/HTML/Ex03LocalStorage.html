@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function() {
+            let div=document.getElementById("divDisplay");
+            if(localStorage.getItem("formData")) {
+                div.innerText = localStorage.getItem("formData");
+            } else {
+                div.innerText = "No data found in local storage.";
+            }
+            document.getElementById("btnSave").addEventListener("click", function() {
+                const name = document.getElementById("txtName").value;
+                const email = document.getElementById("txtEmail").value;
+                const date = document.getElementById("txtDate").value;
+                let msg=`Name:${name}, Email:${email}, Date:${date}`;
+                localStorage.setItem("formData", msg);
+            })
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Registration Form</h2>
+        <p>
+            <p><input type="text" id="txtName" name="name" placeholder="Enter your name" required></p>
+            <p><input type="email" id="txtEmail" name="email" placeholder="Enter your email" required></p>
+            <p><input type="date" id="txtDate" name="date" required></p>
+            <br/>
+            <button type="button" id="btnSave">Submit</button>
+        </p>
+    </div>
+    <div>
+        <p><strong>Stored Data:</strong></p>
+        <p id="divDisplay"></p>
+    </div>
+</body>
+</html>
