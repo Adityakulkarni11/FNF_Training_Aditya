@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Async Programming: A function that will execute outside the current thread is called as async function and the concept is called as async programming.
+        //setTimeout() is a function in JS that allows to invoke a function after a certain specified delay.
+        function testMe()
+        {
+            console.log("This is within the timeout function")
+        }
+        console.log("This is the first line of the code")
+        setTimeout(testMe,3000)
+        console.log("This is the last line of code")
+
+
+        //////How to create our own set of delayed functions///
+        function fetchData(callback)
+        {
+            //It will connect to a backend server, get all data and invoke the callback function only after the data comes
+            setTimeout(()=>
+            {
+                const data=[
+                    {name:"Pro",age:22},
+                    {name:"Pro",age:22},
+                    {name:"Pro",age:22},
+                    {name:"Pro",age:22},
+                    {name:"Pro",age:22}
+                ] //Get the data from the backend...
+                callback(data) //PASS THE DATA TO THE CALLBACK
+            },5000);
+
+        }
+        
+        console.log("Data received from server:");
+        fetchData((result)=>{
+            console.log("Got result from fetch data");
+            for(const item of result){
+                console.log(item);
+            }
+        })
+        console.log("End of the program");
+        
+    </script>
+</body>
+</html>

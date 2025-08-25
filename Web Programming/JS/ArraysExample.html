@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrays in js are like collections in C#. It allows to add, remove, update, copy and perform all kinds of operations on it.
+        let fruits=["Apple","Mango","Pineapple"]
+        console.log(fruits);
+        console.log("The no. of fruits in basket is "+fruits.length);
+        fruits.push("Berry");
+        fruits.unshift("Grapes")
+        console.log(fruits);
+        fruits=[...fruits,"Custardapple"] /// ... is spread operator which is used to spread the contents and then allow new content to be added
+        console.log(fruits);
+        fruits=["Orange",...fruits] /// ... is spread operator which is used to spread the contents and then allow new content to be added
+        console.log(fruits);
+        fruits.splice(3,0,"Guavas"); //(insert,delete,update)
+        console.log(fruits);
+        fruits.splice(3,1,"Banana"); //(insert,delete,update)
+        console.log(fruits);
+        fruits.splice(3,1);
+        console.log(fruits);
+
+        //Iterating the arrays in js
+        console.log("Iterating using for loop");
+        for(let i=0;i<fruits.length;i++){
+            console.log(fruits[i]);
+        }
+
+        console.log("Iterating using for..of loop");
+        for(const fruit of fruits){
+            console.log(fruit);
+        }
+
+        for(const key in fruits){
+            console.log(`Index: ${key}, Value at that index: ${fruits[key]}`);
+        }
+
+        //Every array is an object of a class called Array.We can use the Array class and access functions to perform operations on the array.
+        //foreach take a callback function which hsa2 args: element,index.
+        //This function shall be called for every element of the array and internally passing the values which can be used to perform operations/read the elements.
+        fruits.forEach((fruit,key)=>{
+            console.log(`Index: ${key}, Value: ${fruit}`);
+        })
+
+    </script>
+</body>
+</html>

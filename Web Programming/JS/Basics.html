@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Data types in js are number,string,bool,object.
+        //data types are dynamic in nature
+        //let,const and var are used to declare the variables in js
+        //let and const was introduced in ES6 for better readability and powerfullness
+        // const num=123;
+        // alert(num);
+        // alert("Data type of num is "+typeof(num));
+        // let data="Sample text";
+        // alert("Data type of data is "+typeof(data));
+        // alert(data)
+        // data=true;
+        // alert("Datat type of data is "+typeof(data));
+        // data={name:"Aditya",address:"Bidar"};
+        // alert(data.name);
+        // alert("Datat type of data is "+typeof(data));
+
+        //older js code used to declare variables using var. var is still available as a part of backward comaptibility
+        //let is scope based and very powerful comapared to var.
+
+        // var example="Some text";
+        // console.log(example);
+        // {
+        //     var example="some more text";
+        //     console.log(example);
+        // }
+        // console.log(example);
+
+        //let allows scope based variables.
+        // let example="Some text 1";
+        // console.log(example);
+        // {
+        //     let example="some more text 1";
+        //     console.log(example);
+        // }
+        // console.log(example);
+
+        //if a variable is declared without assignment,then it is called as undefined.
+        // let apple;
+        // console.log(`The value of apple is ${apple}`);
+        // let apple123="200/kg";
+        // console.log(`The value of apple is ${apple123}`);
+        
+        //null is special state when an object is not fillled with data. We usually set null for  variables which will be set with objects that come from a return type of a function
+        // let obj=null;
+        // if(obj==null){
+        //     console.log("Object is null");
+        // }else{
+        //     console.log("Object is not null");
+        // }
+
+        /////// == VS === ///////
+        //=== is used for strict checking while == checks only the value.
+        // const value=123;
+        // if(value=="123"){
+        //     console.log("They are same");
+        // }
+        // if(value==="123"){
+        //     console.log("They are same");
+        // }else{
+        //     console.log("They are not same");
+        // }
+
+        //All inputs come to app as strings. we can convert them to a number using parseInt and parseFloat functions.
+        let num1=parseFloat(prompt("Enter num1"));
+        let num2=parseFloat(prompt("Enter num2"));
+        if(isNaN(num1)||isNaN(num2)){
+            console.log("U cannot perform math op on non numeric data");
+        }else{
+            const message=`Add=${num1+num2},\nSub=${num1-num2},\nMulti=${num1*num2},\nDiv=${num1/num2}`;
+            alert(message);
+        }
+
+        
+    </script>
+</body>
+</html>

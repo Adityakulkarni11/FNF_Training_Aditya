@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Singlton objects in js alloes to create objects directly without a need to define it.
+        const emp={
+            empId:12,
+            empName:"Aditya",
+            empAddress:"Bidar"
+        }
+        console.log(typeof(emp));
+        console.log(emp);
+        emp.empSalary=45000 ///adding new property to the object
+        //Display all the proprties in a loop
+        for(key in emp){
+            console.log(`The Property name: ${key} and the Value: ${emp[key]}`);
+        }
+
+        const temp=emp
+        emp.empAddress="Bhalki";
+        console.log(emp.empAddress); //Reflects on all objects
+        console.log(emp);
+
+        const employee=function(id,name,address){
+            this.EmpId=id;
+            this.EmpName=name;
+            this.EmpAddress=address;
+        }
+        const e1=new employee(13,"Harvey","NY");
+        console.log(`${e1.EmpName} is from ${e1.EmpAddress}`);
+        const e2=new employee(e1.EmpId,e1.EmpName,e1.EmpAddress);
+        e2.EmpAddress="Boston";
+        console.log(`${e2.EmpName} is from ${e2.EmpAddress}`);
+
+        ///////////////ES6 Synatx for creating classes and objects//////////////
+        class Customer{
+            constructor(id,name,address,billAmount){
+                this.id=id;
+                this.name=name;
+                this.address=address;
+                this.billAmount=billAmount;
+            }
+
+            display(){
+                console.log(`${this.name} has orderd items worth ${this.billAmount} to be delivered at ${this.address}`);
+            }
+
+            addBillAmount=(amount)=>this.billAmount+=amount;
+        }
+
+        const cst=new Customer(14,"Mike","LA",562);
+        cst.display();
+        cst.addBillAmount(25);
+        cst.display();
+
+        
+    </script>
+</body>
+</html>
