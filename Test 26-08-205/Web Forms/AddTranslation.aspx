@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddTranslation.aspx.cs" Inherits="SearchWord.AddTranslation" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -24,3 +23,4 @@
     </form>
 </body>
 </html>
+
