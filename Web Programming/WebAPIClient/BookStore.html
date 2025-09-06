@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        const url = "http://localhost:5162/api/Book"
+        function callMe() {
+            $("div").hide(2000);
+            $("a").click(function () {
+                $("div").show(2000);
+                $.get(url, data => {
+                    for (const book of data) {
+                        let row = `<tr>
+                            <td>${book.bookId}</td>
+                            <td>${book.title}</td>
+                            <td>${book.bookPrice}</td>
+                            <td>${book.authorId}</td>
+                        </tr>`
+                        $("table").append(row);
+
+
+                    }
+                })
+            })
+
+        }
+        $(document).ready(callMe);
+    </script>
+</head>    
+<body>
+    <a href="#">Load Books</a>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Author ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Book rows will be appended here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

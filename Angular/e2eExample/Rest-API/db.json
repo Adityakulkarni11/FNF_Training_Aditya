@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Aditya V",
+      "phoneNo": "8529631470",
+      "photo": "images/pic1.png"
+    },
+    {
+      "id": "2",
+      "name": "Edward",
+      "phoneNo": "8618414214",
+      "photo": "images/pic2.png"
+    }
+  ]
+}

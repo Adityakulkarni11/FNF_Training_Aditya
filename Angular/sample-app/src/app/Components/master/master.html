@@ -1,0 +1,46 @@
+<h2 class="text-danger text-center my-3">Hello</h2>
+<div class="container">
+    
+  <h1 class="text-success text-center mb-4">Employee List</h1>
+  <div class="row">
+    <!-- Employee Table -->
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Emp ID</th>
+                <th>Emp Name</th>
+                <th>Emp Address</th>
+                <th>Emp Salary</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let emp of empList">
+                <td>{{ emp.empId }}</td>
+                <td>{{ emp.empName }}</td>
+                <td>{{ emp.empAddress }}</td>
+                <td>{{ emp.empSalary | currency:'USD' }}</td>
+                <td>
+                  <button class="btn btn-sm btn-primary me-2" (click)="onEdit(emp)">
+                    <i class="fas fa-edit me-1"></i>Edit
+                  </button>
+                  <button class="btn btn-sm btn-danger" (click)="onDelete(emp)">
+                    <i class="fas fa-trash me-1"></i>Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Employee Details Component -->
+    <div class="col-md-6">
+      <app-emp-details [selectedEmp]="selectedEmp" (update)="onSaved($event)"></app-emp-details>
+    </div>
+  </div>
+</div>

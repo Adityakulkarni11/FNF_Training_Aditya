@@ -1,0 +1,32 @@
+<div *ngIf="selectedEmp.empId" class="card shadow-sm p-4 mb-4 bg-white rounded">
+  <div class="text-center mb-3">
+    <img [src]="selectedEmp.empImg" alt="Employee Image" class="img-thumbnail" style="max-width: 150px;" />
+    <h3 class="card-title text-info mt-3">Details of {{ selectedEmp.empName }}</h3>
+  </div>
+  <hr />
+
+  <div class="form-group mb-3">
+    <label for="empId">Employee ID</label>
+    <input id="empId" class="form-control" placeholder="Employee ID" [(ngModel)]="selectedEmp.empId" />
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="empName">Employee Name</label>
+    <input id="empName" class="form-control" placeholder="Employee Name" [(ngModel)]="selectedEmp.empName" />
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="empAddress">Employee Address</label>
+    <input id="empAddress" class="form-control" placeholder="Employee Address" [(ngModel)]="selectedEmp.empAddress" />
+  </div>
+
+  <div class="form-group mb-4">
+    <label for="empSalary">Employee Salary</label>
+    <input id="empSalary" class="form-control" placeholder="Employee Salary" [(ngModel)]="selectedEmp.empSalary" />
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-success me-2" (click)="onUpdate()">Update</button>
+    <button class="btn btn-warning">Clear</button>
+  </div>
+</div>

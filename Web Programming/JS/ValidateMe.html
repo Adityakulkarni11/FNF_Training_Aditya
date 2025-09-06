@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Me!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./ValidateMe.js" defer></script>
+    <style>
+        .error {
+            color: IndianRed;
+            font-size: 0.85em;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Validate Me!</h2>
+    <form onsubmit="return validateForm();">
+        <p>
+            <label for="username">Enter the Username:</label>
+            <input type="text" id="username" name="username" />
+        </p>
+
+        <p>
+            <label for="pin">Enter the Pin:</label>
+            <input type="text" id="pin" name="pin" />
+        </p>
+
+        <p>
+            <label for="states">Select a State:</label>
+            <select id="states" name="states">
+                <option value="">--Select--</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Kerala">Kerala</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="checkbox" id="validatePin" name="validatePin" />
+            <label for="validatePin">Validate Pin</label>
+        </p>
+
+        <p>
+            <label>Choose one:</label><br />
+            <input type="radio" id="milk" name="dairy" value="Milk" /> Milk<br />
+            <input type="radio" id="butter" name="dairy" value="Butter" /> Butter<br />
+            <input type="radio" id="cheese" name="dairy" value="Cheese" /> Cheese
+        </p>
+
+        <p>
+            <button type="submit">Check Form</button>
+        </p>
+
+        <p id="message" class="error"></p>
+    </form>
+</body>
+</html>

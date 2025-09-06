@@ -1,0 +1,28 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 text-center bg-info text-white py-4 rounded shadow-sm">
+      <h1 class="display-5 fw-bold">👁️ View Contact</h1>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-5" *ngIf="contact">
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0">
+        <div class="card-body text-center">
+          <img
+            [src]="contact.photo"
+            alt="{{ contact.name }}"
+            class="rounded-circle mb-3"
+            style="width: 120px; height: 120px; object-fit: cover;"
+          />
+          <h4 class="card-title mb-2">{{ contact.name }}</h4>
+          <p class="card-text text-muted mb-1"><strong>ID:</strong> {{ contact.id }}</p>
+          <p class="card-text text-muted mb-3"><strong>Phone:</strong> {{ contact.phoneNo }}</p>
+          <a routerLink="/contacts/viewall" class="btn btn-outline-primary">
+            <i class="fas fa-arrow-left me-1"></i> Back to Contact List
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

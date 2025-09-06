@@ -1,0 +1,55 @@
+<div class="container mt-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h4 class="mb-0">Add New Contact</h4>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            [(ngModel)]="contact.name"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="phoneNo" class="form-label">Phone No</label>
+          <input
+            type="text"
+            id="phoneNo"
+            name="phoneNo"
+            class="form-control"
+            [(ngModel)]="contact.phoneNo"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="photo" class="form-label">Photo URL</label>
+          <input
+            type="text"
+            id="photo"
+            name="photo"
+            class="form-control"
+            [(ngModel)]="contact.photo"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-success"
+          [disabled]="!contactForm.form.valid"
+        >
+          Add Contact
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
