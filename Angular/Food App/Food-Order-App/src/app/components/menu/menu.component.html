@@ -1,0 +1,76 @@
+<div class="container py-5">
+
+  <!-- Back Button -->
+  <button (click)="goBack()" class="btn btn-outline-dark mb-4 rounded-pill px-4">
+    <i class="fas fa-arrow-left me-2"></i> Back to Restaurants
+  </button>
+
+  <!-- Loading State -->
+  <div *ngIf="loading" class="alert alert-info text-center rounded-3 shadow-sm">
+    <i class="fas fa-spinner fa-spin me-2"></i> Loading menu...
+  </div>
+
+  <!-- Restaurant Info -->
+  <div *ngIf="!loading && restaurant">
+    <div class="card border-0 shadow-lg rounded-4 mb-4 bg-gradient" style="background: linear-gradient(to right, #e0f7fa, #e0f2f1);">
+      <div class="card-body">
+        <h2 class="card-title text-dark d-flex align-items-center gap-2">
+          <i class="fas fa-store text-primary"></i> {{ restaurant.restaurant_name }}
+        </h2>
+        <p class="text-muted mb-0 d-flex align-items-center gap-2">
+          <i class="fas fa-map-marker-alt text-danger"></i> {{ restaurant.restaurant_address }}
+        </p>
+      </div>
+    </div>
+
+    <!-- Menu Header -->
+    <h3 class="mb-4 text-dark fw-bold d-flex align-items-center gap-2">
+      <i class="fas fa-utensils text-success"></i> Menu
+    </h3>
+
+    <!-- Menu Grid -->
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let item of restaurant.menu">
+        <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
+
+          <!-- Image -->
+          <img [src]="item.item_photo" [alt]="item.item_name" class="card-img-top img-fluid" style="height: 220px; object-fit: cover;">
+
+          <!-- Content -->
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title text-dark fw-semibold">{{ item.item_name }}</h4>
+            <p class="text-success fw-bold fs-5">
+              <i class="fas fa-rupee-sign me-1"></i> {{ item.item_price }}
+            </p>
+
+            <!-- Quantity Controls -->
+            <div class="d-flex align-items-center mb-3">
+              <label class="form-label me-2 fw-semibold">Quantity:</label>
+              <div class="btn-group" role="group">
+                <button (click)="updateQuantity(item.item_id, -1)" class="btn btn-outline-danger btn-sm">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <span class="btn btn-light btn-sm disabled">{{ quantities[item.item_id] }}</span>
+                <button (click)="updateQuantity(item.item_id, 1)" class="btn btn-outline-success btn-sm">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Add to Cart -->
+            <button (click)="addToCart(item)" class="btn btn-success mt-auto rounded-pill">
+              <i class="fas fa-cart-plus me-2"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Go to Cart Button -->
+    <div class="text-end mt-5">
+      <button (click)="goToCart()" class="btn btn-primary btn-lg rounded-pill px-4">
+        <i class="fas fa-shopping-cart me-2"></i> Go to Cart
+      </button>
+    </div>
+  </div>
+</div>
