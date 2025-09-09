@@ -36,5 +36,4 @@ export class ContactList implements OnInit{
       });
     }
   }
-
 }

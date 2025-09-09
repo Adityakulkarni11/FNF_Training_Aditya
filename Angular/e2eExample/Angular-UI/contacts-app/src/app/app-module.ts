@@ -8,7 +8,7 @@ import { EditContact } from './Components/edit-contact/edit-contact';
 import { NewContact } from './Components/new-contact/new-contact';
 import { ErrorPage } from './Components/error-page/error-page';
 import { Navbar } from './Components/navbar/navbar';
-import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -24,7 +24,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClient
     //HttpClient
   ],
   providers: [

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Contact } from '../../Services/contact';
 import { contact } from '../../Models/contact';
@@ -21,7 +21,8 @@ export class EditContact implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private service: Contact
+    private service: Contact,
+    private cdRef: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -31,6 +32,7 @@ export class EditContact implements OnInit {
     this.service.getContact(id).subscribe((data: contact) => {
       console.log('Fetched contact:', data);
       this.contact = data;
+      this.cdRef.detectChanges();
     });
   }
 }
