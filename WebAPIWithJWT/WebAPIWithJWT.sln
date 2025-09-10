@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIWithJWT", "WebAPIWithJWT\WebAPIWithJWT.csproj", "{928EDB89-C302-45A5-8F93-B9952D6F8C67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp", "ContactApp\ContactApp.csproj", "{AAB11FE2-C7E9-488A-A6F4-6ECB181B7AB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{928EDB89-C302-45A5-8F93-B9952D6F8C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928EDB89-C302-45A5-8F93-B9952D6F8C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928EDB89-C302-45A5-8F93-B9952D6F8C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928EDB89-C302-45A5-8F93-B9952D6F8C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB11FE2-C7E9-488A-A6F4-6ECB181B7AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB11FE2-C7E9-488A-A6F4-6ECB181B7AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB11FE2-C7E9-488A-A6F4-6ECB181B7AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB11FE2-C7E9-488A-A6F4-6ECB181B7AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96506E17-58F7-4762-8B4B-C057E7FC49B0}
+	EndGlobalSection
+EndGlobal
