@@ -1,0 +1,57 @@
+﻿@using BlazorApp.Shared;
+
+<h3>Products</h3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in products)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price.ToString("C")</td>
+                <td>
+                    <button class="btn btn-info btn-sm" @onclick="() => onShow(product)">Show</button>
+                    <button class="btn btn-primary btn-sm" @onclick="() => EditProduct(product.Id)">Edit</button>
+                    <button class="btn btn-danger btn-sm" @onclick="() => DeleteProduct(product.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<Product_detail SelectedProduct="selectedProduct"/>
+@code {
+    private List<Product> products = new List<Product>
+    {
+        new Product { Id = 1, Name = "Laptop", Price = 999.99m },
+        new Product { Id = 2, Name = "Smartphone", Price = 499.99m },
+        new Product { Id = 3, Name = "Tablet", Price = 299.99m }
+    };
+    private Product selectedProduct = null;
+    private void onShow(Product p)
+    {
+        selectedProduct = p;
+    }
+    private void EditProduct(int id)
+    {
+        // Logic to edit the product (e.g., navigate to edit page or open modal)
+        Console.WriteLine($"Edit product with ID: {id}");
+    }
+
+    private void DeleteProduct(int id)
+    {
+        var productToRemove = products.FirstOrDefault(p => p.Id == id);
+        if (productToRemove != null)
+        {
+            products.Remove(productToRemove);
+        }
+    }
+}

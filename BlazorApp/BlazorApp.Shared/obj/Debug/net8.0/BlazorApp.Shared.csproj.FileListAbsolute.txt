@@ -1,0 +1,11 @@
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\bin\Debug\net8.0\BlazorApp.Shared.deps.json
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\bin\Debug\net8.0\BlazorApp.Shared.dll
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\bin\Debug\net8.0\BlazorApp.Shared.pdb
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\obj\Debug\net8.0\BlazorApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\obj\Debug\net8.0\BlazorApp.Shared.AssemblyInfoInputs.cache
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\obj\Debug\net8.0\BlazorApp.Shared.AssemblyInfo.cs
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\obj\Debug\net8.0\BlazorApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\obj\Debug\net8.0\BlazorApp.Shared.dll
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\obj\Debug\net8.0\refint\BlazorApp.Shared.dll
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\obj\Debug\net8.0\BlazorApp.Shared.pdb
+C:\Users\6152784\Desktop\Visual Code\BlazorApp\BlazorApp.Shared\obj\Debug\net8.0\ref\BlazorApp.Shared.dll
