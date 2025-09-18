@@ -1,0 +1,6 @@
+C:\Users\6152784\Desktop\Visual Code\RecapSession\RecapSession\DotnetFrameworkLib\bin\Debug\DotnetFrameworkLib.dll
+C:\Users\6152784\Desktop\Visual Code\RecapSession\RecapSession\DotnetFrameworkLib\bin\Debug\DotnetFrameworkLib.pdb
+C:\Users\6152784\Desktop\Visual Code\RecapSession\RecapSession\DotnetFrameworkLib\obj\Debug\DotnetFrameworkLib.csproj.AssemblyReference.cache
+C:\Users\6152784\Desktop\Visual Code\RecapSession\RecapSession\DotnetFrameworkLib\obj\Debug\DotnetFrameworkLib.csproj.CoreCompileInputs.cache
+C:\Users\6152784\Desktop\Visual Code\RecapSession\RecapSession\DotnetFrameworkLib\obj\Debug\DotnetFrameworkLib.dll
+C:\Users\6152784\Desktop\Visual Code\RecapSession\RecapSession\DotnetFrameworkLib\obj\Debug\DotnetFrameworkLib.pdb
