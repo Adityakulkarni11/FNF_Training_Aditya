@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{98D62A9B-3474-4F30-BC5A-CFEE0BEAF2FD}|UnitTestingComponenet\\UnitTestingComponenet.csproj|c:\\users\\6152784\\desktop\\visual code\\unit-testing\\unittesting\\unittestingcomponenet\\contactservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D62A9B-3474-4F30-BC5A-CFEE0BEAF2FD}|UnitTestingComponenet\\UnitTestingComponenet.csproj|solutionrelative:unittestingcomponenet\\contactservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC2137F-AFE2-4CAD-91EE-BA1ED2D3F104}|UnitTesting\\UnitTestingLib.csproj|c:\\users\\6152784\\desktop\\visual code\\unit-testing\\unittesting\\unittesting\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC2137F-AFE2-4CAD-91EE-BA1ED2D3F104}|UnitTesting\\UnitTestingLib.csproj|solutionrelative:unittesting\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC2137F-AFE2-4CAD-91EE-BA1ED2D3F104}|UnitTesting\\UnitTestingLib.csproj|c:\\users\\6152784\\desktop\\visual code\\unit-testing\\unittesting\\unittesting\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC2137F-AFE2-4CAD-91EE-BA1ED2D3F104}|UnitTesting\\UnitTestingLib.csproj|solutionrelative:unittesting\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D62A9B-3474-4F30-BC5A-CFEE0BEAF2FD}|UnitTestingComponenet\\UnitTestingComponenet.csproj|c:\\users\\6152784\\desktop\\visual code\\unit-testing\\unittesting\\unittestingcomponenet\\notificationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D62A9B-3474-4F30-BC5A-CFEE0BEAF2FD}|UnitTestingComponenet\\UnitTestingComponenet.csproj|solutionrelative:unittestingcomponenet\\notificationtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98D62A9B-3474-4F30-BC5A-CFEE0BEAF2FD}|UnitTestingComponenet\\UnitTestingComponenet.csproj|c:\\users\\6152784\\desktop\\visual code\\unit-testing\\unittesting\\unittestingcomponenet\\mathtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98D62A9B-3474-4F30-BC5A-CFEE0BEAF2FD}|UnitTestingComponenet\\UnitTestingComponenet.csproj|solutionrelative:unittestingcomponenet\\mathtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDC2137F-AFE2-4CAD-91EE-BA1ED2D3F104}|UnitTesting\\UnitTesting.csproj|c:\\users\\6152784\\desktop\\visual code\\unit-testing\\unittesting\\unittesting\\mathclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDC2137F-AFE2-4CAD-91EE-BA1ED2D3F104}|UnitTesting\\UnitTesting.csproj|solutionrelative:unittesting\\mathclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTestingComponenet\\ContactServiceTest.cs",
+              "RelativeDocumentMoniker": "UnitTestingComponenet\\ContactServiceTest.cs",
+              "ToolTip": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTestingComponenet\\ContactServiceTest.cs",
+              "RelativeToolTip": "UnitTestingComponenet\\ContactServiceTest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:41:40.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactService.cs",
+              "DocumentMoniker": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTesting\\ContactService.cs",
+              "RelativeDocumentMoniker": "UnitTesting\\ContactService.cs",
+              "ToolTip": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTesting\\ContactService.cs",
+              "RelativeToolTip": "UnitTesting\\ContactService.cs",
+              "ViewState": "AgIAABMAAACQAAAAAAA9wB0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:39:08.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotificationTest.cs",
+              "DocumentMoniker": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTestingComponenet\\NotificationTest.cs",
+              "RelativeDocumentMoniker": "UnitTestingComponenet\\NotificationTest.cs",
+              "ToolTip": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTestingComponenet\\NotificationTest.cs",
+              "RelativeToolTip": "UnitTestingComponenet\\NotificationTest.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T05:54:43.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailServices.cs",
+              "DocumentMoniker": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTesting\\EmailServices.cs",
+              "RelativeDocumentMoniker": "UnitTesting\\EmailServices.cs",
+              "ToolTip": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTesting\\EmailServices.cs",
+              "RelativeToolTip": "UnitTesting\\EmailServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T05:21:57.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MathTest.cs",
+              "DocumentMoniker": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTestingComponenet\\MathTest.cs",
+              "RelativeDocumentMoniker": "UnitTestingComponenet\\MathTest.cs",
+              "ToolTip": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTestingComponenet\\MathTest.cs",
+              "RelativeToolTip": "UnitTestingComponenet\\MathTest.cs",
+              "ViewState": "AgIAACAAAAAAyMzMzMwewDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T04:09:24.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MathClass.cs",
+              "DocumentMoniker": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTesting\\MathClass.cs",
+              "RelativeDocumentMoniker": "UnitTesting\\MathClass.cs",
+              "ToolTip": "C:\\Users\\6152784\\Desktop\\Visual Code\\Unit-Testing\\UnitTesting\\UnitTesting\\MathClass.cs",
+              "RelativeToolTip": "UnitTesting\\MathClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T04:04:31.04Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

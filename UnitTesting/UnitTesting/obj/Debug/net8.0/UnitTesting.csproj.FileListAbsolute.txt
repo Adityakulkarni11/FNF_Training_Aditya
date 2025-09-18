@@ -1,0 +1,11 @@
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\bin\Debug\net8.0\UnitTesting.deps.json
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\bin\Debug\net8.0\UnitTesting.dll
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\bin\Debug\net8.0\UnitTesting.pdb
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\obj\Debug\net8.0\UnitTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\obj\Debug\net8.0\UnitTesting.AssemblyInfoInputs.cache
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\obj\Debug\net8.0\UnitTesting.AssemblyInfo.cs
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\obj\Debug\net8.0\UnitTesting.csproj.CoreCompileInputs.cache
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\obj\Debug\net8.0\UnitTesting.dll
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\obj\Debug\net8.0\refint\UnitTesting.dll
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\obj\Debug\net8.0\UnitTesting.pdb
+C:\Users\6152784\Desktop\Visual Code\Unit-Testing\UnitTesting\UnitTesting\obj\Debug\net8.0\ref\UnitTesting.dll
